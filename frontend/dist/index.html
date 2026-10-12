@@ -2,12 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SocialBoost AI</title>
-    <script type="module" crossorigin src="/assets/index-C08C2Yjr.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CSr9HYYz.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>SocialBoost AI — Platform-ready social content from any photo or video</title>
+    <meta
+      name="description"
+      content="Upload an image or video and get platform-ready captions, titles, hashtags, hooks and CTAs for Instagram, YouTube and Facebook in seconds."
+    />
+    <meta name="theme-color" content="#f8f8fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#08080b" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SocialBoost AI" />
+    <meta
+      property="og:description"
+      content="Platform-ready captions, titles, hashtags, hooks and CTAs from any photo or video."
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Apply the saved theme before first paint to avoid a light/dark flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('sb-theme') || 'system';
+          var dark = t === 'dark' || (t === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-2wQawdeM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-B0Z9INg1.js">
+    <link rel="modulepreload" crossorigin href="/assets/Button-MWNKCOZU.js">
+    <link rel="modulepreload" crossorigin href="/assets/dist-H4-bD0Rk.js">
+    <link rel="modulepreload" crossorigin href="/assets/AnimatePresence-BSC3GQbV.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-reduced-motion-C7GyMfhG.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DwPtyMlZ.css">
   </head>
   <body>
+    <noscript>SocialBoost AI needs JavaScript enabled to run.</noscript>
     <div id="root"></div>
   </body>
 </html>
