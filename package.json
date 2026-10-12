@@ -1,0 +1,19 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "MERN + Gemini + Cloudinary. Per SRS: upload image/video → select platform (Instagram/YouTube/Facebook) → content type → AI analysis + platform-specific captions, titles, descriptions, hashtags, keywords, hooks, CTAs → edit/regenerate/save/copy → history.",
+  "main": "index.js",
+  "scripts": {
+   "frontend": "npm run dev --prefix frontend",
+    "backend": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
